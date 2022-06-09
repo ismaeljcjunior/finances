@@ -55,7 +55,7 @@ export const UserWrapper = styled.View`
     align-items:center;
 `;
 export const LogoutButon = styled(BorderlessButton)`
-
+    
 `;
 export const Icon = styled(Feather)`
     color: ${({ theme }) => theme.colors.secondary};

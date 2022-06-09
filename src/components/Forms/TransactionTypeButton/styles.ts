@@ -36,7 +36,7 @@ export const Title = styled.Text`
     font-family: ${({ theme }) => theme.fonts.regular} ;
 `;
 export const Button = styled(RectButton)`
-   
+  
 `;
 export const Icon = styled(Feather) <IconProps>`
     font-size: ${RFValue(24)}px;

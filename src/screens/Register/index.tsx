@@ -32,7 +32,7 @@ export function Register() {
     const {
         control,
         handleSubmit,
-        formState: {errors}
+        formState: {errors},
     } = useForm({
         resolver: yupResolver(schema)
     })

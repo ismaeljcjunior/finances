@@ -1,7 +1,8 @@
 import React from "react";
 import { Feather } from '@expo/vector-icons'
-import { Container, Title, Icon,Button } from './styles'
-import { RectButtonProps } from 'react-native-gesture-handler'
+import { Container, Title, Icon, Button } from './styles'
+import { RectButtonProps, GestureHandlerRootView } from 'react-native-gesture-handler'
+
 
 const icons = {
     up: 'arrow-up-circle',
@@ -25,16 +26,18 @@ export function TransactionTypeButton({
         <Container
             isActive={isActive}
             type={type}
-
+  
         >
-            <Button
-                {...rest}
-            >
-                <Icon name={icons[type]}
-                    type={type}
+           
+                <Button
+                    {...rest}
+                >
+                    <Icon name={icons[type]}
+                        type={type}
 
-                />
-            </Button>
+                    />
+                </Button>
+            
             <Title>{title}</Title>
         </Container>
     )

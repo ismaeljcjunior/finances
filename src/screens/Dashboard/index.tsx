@@ -1,7 +1,7 @@
 import React from 'react';
 import { HightLightCard } from '../../components/HightLightCard';
 import { TransactionCard, TransactionCardProps } from '../../components/TransactionCard/'
-import { LogoutButon,Transactions, Title, HightLightCards, Container, UserWrapper, Header, UserInfo, Photo, User, UserGreeting, UserName, Icon, TransactionList } from './styles';
+import { LogoutButon, Transactions, Title, HightLightCards, Container, UserWrapper, Header, UserInfo, Photo, User, UserGreeting, UserName, Icon, TransactionList } from './styles';
 
 export interface DataListProps extends TransactionCardProps {
     id: string;
@@ -38,7 +38,7 @@ export function Dashboard() {
         amount: "R$ 60,00",
         category: {
             name: 'Lanches',
-            icon: 'fastfood',
+            icon: 'shopping-bag',
         },
         date: "01/01/2020"
     }
@@ -55,7 +55,7 @@ export function Dashboard() {
                             <UserName>Ismael</UserName>
                         </User>
                     </UserInfo>
-                    <LogoutButon /*onPress={()=> {}}*/ >
+                    <LogoutButon  >
                         <Icon name="power" />
                     </LogoutButon>
                 </UserWrapper>
@@ -87,7 +87,6 @@ export function Dashboard() {
                     data={data}
                     keyExtractor={item => item.id}
                     renderItem={({ item }) => <TransactionCard data={item} />}
-
                 />
 
             </Transactions>
